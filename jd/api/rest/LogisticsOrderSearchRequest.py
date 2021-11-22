@@ -1,0 +1,19 @@
+from jd.api.base import RestApi
+
+class LogisticsOrderSearchRequest(RestApi):
+		def __init__(self,domain='gw.api.360buy.com',port=80):
+			"""
+			"""
+			RestApi.__init__(self,domain, port)
+			self.receipt_nos = None
+			self.status = None
+
+		def getapiname(self):
+			return 'jingdong.logistics.order.search'
+
+			
+
+
+
+
+

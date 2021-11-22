@@ -1,0 +1,20 @@
+from app.main.stores.jd.api.base import RestApi
+
+class PopOrderEnGetRequest(RestApi):
+		def __init__(self,domain='gw.storeman.360buy.com',port=80):
+			"""
+			"""
+			RestApi.__init__(self,domain, port)
+			self.order_state = None
+			self.optional_fields = None
+			self.order_id = None
+
+		def getapiname(self):
+			return 'jingdong.pop.order.enGet'
+
+			
+
+
+
+
+

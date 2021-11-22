@@ -1,0 +1,20 @@
+from app.main.stores.jd.api.base import RestApi
+
+class VcItemSpuTemplateGetRequest(RestApi):
+		def __init__(self,domain='gw.storeman.360buy.com',port=80):
+			"""
+			"""
+			RestApi.__init__(self,domain, port)
+			self.cid3 = None
+			self.brand_id = None
+			self.model = None
+
+		def getapiname(self):
+			return 'jingdong.vc.item.spuTemplate.get'
+
+			
+
+
+
+
+

@@ -1,0 +1,21 @@
+from app.main.stores.jd.api.base import RestApi
+
+class DropshipDpsPartitionStockInfoQueryRequest(RestApi):
+		def __init__(self,domain='gw.storeman.360buy.com',port=80):
+			"""
+			"""
+			RestApi.__init__(self,domain, port)
+			self.sku = None
+			self.storeId = None
+			self.page = None
+			self.pageSize = None
+
+		def getapiname(self):
+			return 'jingdong.dropship.dps.partitionStockInfo.query'
+
+			
+
+
+
+
+

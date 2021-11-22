@@ -1,0 +1,41 @@
+from app import db, flask_bcrypt
+
+
+class HDProductItem(db.Model):
+    """ Product HTML for storing product related html contents """
+    __tablename__ = "scm_hd_product_item"
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    slitmCd = db.Column(db.String(12))
+    itemCsfNm = db.Column(db.String(100))
+    itemLCsfNm = db.Column(db.String(100))
+    itemMCsfNm = db.Column(db.String(100))
+    itemSCsfNm = db.Column(db.String(100))
+    itemDCsfNm = db.Column(db.String(100))
+    itemLCsfCd = db.Column(db.String(10))
+    itemMCsfCd = db.Column(db.String(10))
+    itemSCsfCd = db.Column(db.String(10))
+    itemDCsfCd = db.Column(db.String(10))
+    itemCsfGbcd = db.Column(db.String(10))
+    itemCsfGbcdNm = db.Column(db.String(100))
+    itemCsfLvl = db.Column(db.Integer)
+    osbd = db.Column(db.Integer)
+    sizeCsfGbcd = db.Column(db.String(10))
+    qaTrgtYn = db.Column(db.String(1))
+    safeCertTrgtYn = db.Column(db.String(1))
+    coreMngYn = db.Column(db.String(1))
+    itstDlbrYn = db.Column(db.String(1))
+    infNotfBsicCd = db.Column(db.String(10))
+    hmallPntAcmRate = db.Column(db.DECIMAL(12,2))
+    hmallPntAcmRateUseYn = db.Column(db.String(1))
+    dluMaxBuyQty = db.Column(db.Integer)
+    yruMaxBuyQty = db.Column(db.Integer)
+    qaCsfCd = db.Column(db.String(10))
+    itemPupUseYn = db.Column(db.String(1))
+    frdlvSellLimtYn = db.Column(db.String(1))
+    imdtCnclPossYn = db.Column(db.String(1))
+    mnfcSellCoMndrYn = db.Column(db.String(1))
+    satOffdYn = db.Column(db.String(1))
+    hscd = db.Column(db.String(10))
+    safeCertTypeGbcd = db.Column(db.String(10))
+    storpiupPossYn = db.Column(db.String(1))
